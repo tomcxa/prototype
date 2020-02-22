@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /* eslint-disable import/prefer-default-export */
 // TODO: write your code here
 
@@ -9,10 +10,8 @@ export function Character(name, type) {
     this.defence = 40;
 }
 
-Character.prototype = {
-    damage(points) {
-        if (this.health >= 0) {
-            this.health -= points * (1 - this.defence / 100);
-        }
+Character.prototype.damage = function (points) {
+    if (this.health >= 0) {
+        this.health -= points * (1 - this.defence / 100);
     }
-}
+};
