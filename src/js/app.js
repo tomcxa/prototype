@@ -16,12 +16,3 @@ Character.prototype = {
         }
     }
 }
-
-const bobik = new Character('Bobik', 'Type');
-console.log(bobik.health);
-bobik.damage(1100);
-console.log(bobik.health);
-bobik.damage(110);
-console.log(bobik.health);
-bobik.damage(110);
-console.log(bobik.health);
